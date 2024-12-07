@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>草木皆兵 - 文生视频展示</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .frames {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .frame {
+      flex: 1 1 calc(33.333% - 10px);
+      max-width: calc(33.333% - 10px);
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .frame img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    video {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>草木皆兵 (cǎo mù jiē bīng)</h1>
+  
+  <h2>关键帧描述</h2>
+  <div class="frames">
+    <div class="frame">
+      <h3>第一章：风吹草动</h3>
+      <img src="frame1.jpg" alt="风吹草动场景">
+      <p>风吹过树林，草木随风摇曳，仿佛埋伏着士兵。</p>
+    </div>
+    <div class="frame">
+      <h3>第二章：紧张的士兵</h3>
+      <img src="frame2.jpg" alt="士兵紧张的场景">
+      <p>士兵神情紧张，误将草木当作敌人，严阵以待。</p>
+    </div>
+    <div class="frame">
+      <h3>第三章：虚惊一场</h3>
+      <img src="frame3.jpg" alt="虚惊一场的场景">
+      <p>士兵发现只是草木，松了一口气。</p>
+    </div>
+    <div class="frame">
+      <h3>第四章：虚实难辨</h3>
+      <img src="frame4.jpg" alt="虚实难辨的场景">
+      <p>远处的树林晃动，真伪难辨，紧张气氛再度上升。</p>
+    </div>
+  </div>
+  
+  <h2>生成的视频</h2>
+  <video controls>
+    <source src="generated-video.mp4" type="video/mp4">
+    您的浏览器不支持视频播放。
+  </video>
+  
+  <h2>生成过程简述</h2>
+  <p>通过文生视频技术，输入成语“草木皆兵”后，模型生成了4个关键帧的描述与场景。随后将这些关键帧插入动画过渡，并为视频配上背景音乐和解说。</p>
+
+</body>
+</html>
